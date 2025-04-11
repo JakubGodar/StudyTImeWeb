@@ -2,17 +2,15 @@
 <html lang="sk">
   <head>
     <meta charset="UTF-8" />
-    <title>StudyTime</title>
+    <title>StudySprint</title>
     <style>
       body {
         margin: 0;
-        padding: 0;
+        padding: 40px 0; /* jemné vertikálne okraje */
         background: #1c1c1c;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
         color: #ddd;
       }
 
@@ -24,6 +22,14 @@
         text-align: center;
         width: 80%;
         max-width: 800px;
+      }
+
+      .logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        object-fit: cover;
+        border-radius: 40%;
       }
 
       h1 {
@@ -41,11 +47,26 @@
       a {
         color: #4a90e2;
         text-decoration: none;
-        word-break: break-all;
+        word-break: break-word;
       }
 
       a:hover {
         text-decoration: underline;
+      }
+
+      .links-contact-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 30px;
+        padding-top: 15px;
+        border-top: 1px solid #444;
+        flex-wrap: wrap;
+      }
+
+      .links-contact-wrapper .contact {
+        flex: 1 1 45%;
+        text-align: left;
       }
 
       @media (max-width: 768px) {
@@ -60,59 +81,137 @@
         p {
           font-size: 14px;
         }
+
+        .links-contact-wrapper {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .links-contact-wrapper .contact {
+          flex: 1 1 100%;
+          margin-bottom: 20px;
+          text-align: center;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>StudyTime</h1>
+      <h1>StudySprint</h1>
+      <img src="StudyTimeIcon.png" alt="StudySprint Logo" class="logo" />
       <p>
-        StudyTime is a simple application that helps you schedule your study
+        StudySprint is a simple application that helps you schedule your study
         time effectively.
       </p>
+      <div
+        style="
+          margin-top: 30px;
+          background-color: #3a3a3a;
+          padding: 20px;
+          border-radius: 12px;
+          color: #ddd;
+          text-align: left;
+        "
+      >
+        <h2 style="color: #e0eafc">🛠 How to install the app via TestFlight</h2>
+        <ol style="line-height: 1.7; padding-left: 20px">
+          <li>Click the “Download via TestFlight” button above.</li>
+          <li>
+            If you don’t have the <strong>TestFlight</strong> app installed,
+            you’ll be redirected to the App Store — install it first.
+          </li>
+          <li>
+            Once TestFlight opens, accept the invitation to join the beta
+            testing.
+          </li>
+          <li>Tap “Install” to download the app to your iPhone.</li>
+          <li>
+            After installation, open the <strong>Watch</strong> app on your
+            iPhone.
+          </li>
+          <li>
+            In the <strong>My Watch</strong> tab, scroll to find your app and
+            toggle <strong>“Show App on Apple Watch”</strong> ON.
+          </li>
+          <li>Done! The app will appear on your Apple Watch shortly.</li>
+        </ol>
 
-      <p>
-        LinkedIn –
         <a
-          href="https://www.linkedin.com/posts/fellow-man-b3220535b_studytime-app-on-applewatch-for-scheduling-activity-7315053056016957440-EzW4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFmNsBYB_NJNESM1onVYbrEZrmddGpWDXtY"
+          href="https://testflight.apple.com/join/29s1eYqr"
           target="_blank"
+          style="
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007aff;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+          "
         >
-          Visit on LinkedIn
+          🚀 Download via TestFlight
         </a>
-      </p>
-      <p>
-        Instagram –
-        <a href="https://www.instagram.com/p/DIJwqRsRKfF/" target="_blank">
-          View on Instagram
-        </a>
-      </p>
 
-      <p>
-        X –
-        <a
-          href="https://x.com/FeLLoWM65269859/status/1909284776026222901"
-          target="_blank"
-        >
-          Check it out on X
-        </a>
-      </p>
+        <!-- Warning -->
+        <p style="font-size: 14px; color: #888; margin-top: 8px">
+          ⚠️ This link works only on Apple devices (iPhone, iPad, Apple Watch).
+        </p>
+      </div>
 
-      <p>
-        GitHub –
-        <a href="https://github.com/JakubGodar/StudyTime" target="_blank">
-          View on GitHub
-        </a>
-      </p>
+      <div class="links-contact-wrapper">
+        <div class="contact">
+          <p><strong>Links</strong></p>
+          <p>
+            LinkedIn –
+            <a
+              href="https://www.linkedin.com/posts/fellow-man-b3220535b_studytime-app-on-applewatch-for-scheduling-activity-7315053056016957440-EzW4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFmNsBYB_NJNESM1onVYbrEZrmddGpWDXtY"
+              target="_blank"
+            >
+              Visit on LinkedIn
+            </a>
+          </p>
+          <p>
+            Instagram –
+            <a href="https://www.instagram.com/p/DIJwqRsRKfF/" target="_blank">
+              View on Instagram
+            </a>
+          </p>
+          <p>
+            X –
+            <a
+              href="https://x.com/FeLLoWM65269859/status/1909284776026222901"
+              target="_blank"
+            >
+              Check it out on X
+            </a>
+          </p>
+          <p>
+            GitHub –
+            <a href="https://github.com/JakubGodar/StudyTime" target="_blank">
+              View on GitHub
+            </a>
+          </p>
+          <p>
+            TikTok –
+            <a
+              href="https://www.tiktok.com/@fellowman6/video/7490608561324674326"
+              target="_blank"
+            >
+              Watch on TikTok
+            </a>
+          </p>
+        </div>
 
-      <p>
-        TikTok –
-        <a
-          href="https://www.tiktok.com/@fellowman6/video/7490608561324674326"
-          target="_blank"
-        >
-          Watch on TikTok
-        </a>
-      </p>
+        <div class="contact">
+          <p><strong>Kontakt</strong></p>
+          <p>Meno: Jakub Godár</p>
+          <p>
+            Email:
+            <a href="mailto:2820974@ucm.sk">2820974@ucm.sk</a>
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
