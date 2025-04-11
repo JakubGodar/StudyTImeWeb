@@ -69,6 +69,15 @@
         text-align: left;
       }
 
+      .funcs {
+        flex: 1;
+        min-width: 200px;
+        max-width: 300px;
+        background-color: #3a3a3a;
+        padding: 20px;
+        border-radius: 12px;
+      }
+
       @media (max-width: 768px) {
         .container {
           padding: 30px 40px;
@@ -98,11 +107,117 @@
   <body>
     <div class="container">
       <h1>StudySprint</h1>
-      <img src="StudyTimeIcon.png" alt="StudySprint Logo" class="logo" />
+      <img
+        src="https://raw.githubusercontent.com/JakubGodar/StudyTImeWeb/refs/heads/main/StudyTime/StudyTImeIcon.png"
+        alt="StudySprint Logo"
+        class="logo"
+      />
+      <h2>What is StudySprint?</h2>
       <p>
-        StudySprint is a simple application that helps you schedule your study
-        time effectively.
+        StudySprint is a simple and focused productivity tool designed for
+        students who want to manage their study time more effectively. With a
+        built-in Pomodoro timer, task scheduling, and smart notifications, you
+        can stay on track and never miss your study goals — directly from your
+        iPhone or Apple Watch.
       </p>
+      <h2>Key Features</h2>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          padding: 20px;
+          border-radius: 12px;
+          color: #ddd;
+          text-align: left;
+          gap: 20px;
+          justify-content: space-between;
+          text-align: center;
+        "
+      >
+        <div class="funcs">
+          <h3>⏱️ Smart Study Timer</h3>
+          <p>
+            Pomodoro-style countdown with pause, reset, and haptic feedback –
+            optimized for both iPhone and Apple Watch.
+          </p>
+        </div>
+
+        <div class="funcs">
+          <h3>📋 Quick Task Planning</h3>
+          <p>
+            Create study tasks with a start time and duration, and easily manage
+            them in a simple task list.
+          </p>
+        </div>
+
+        <div class="funcs">
+          <h3>🔔 Timely Notifications</h3>
+          <p>
+            Local notifications to remind you when it's time to start a task or
+            when your study session ends – even in the background.
+          </p>
+        </div>
+      </div>
+
+      <h2 style="color: #e0eafc; margin-top: 40px">📸 App Screenshots</h2>
+      <p style="color: #bbb; margin-bottom: 20px">
+        A quick look at how StudySprint works on iPhone and Apple Watch.
+      </p>
+
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+        "
+      >
+        <div
+          style="
+            background-color: #3a3a3a;
+            border-radius: 12px;
+            padding: 10px;
+            max-width: 200px;
+          "
+        >
+          <img
+            src="Timer.png"
+            alt="StudySprint Screenshot 1"
+            style="width: 100%; border-radius: 8px"
+          />
+          <img
+            src="TimerCount.png"
+            alt="StudySprint Screenshot 1"
+            style="width: 100%; border-radius: 8px"
+          />
+          <p style="font-size: 12px; color: #aaa; margin-top: 8px">
+            Timer Screen
+          </p>
+        </div>
+
+        <div
+          style="
+            background-color: #3a3a3a;
+            border-radius: 12px;
+            padding: 10px;
+            max-width: 200px;
+          "
+        >
+          <img
+            src="TaskList.png"
+            alt="StudySprint Screenshot 1"
+            style="width: 100%; border-radius: 8px"
+          />
+          <img
+            src="CreateTask.png"
+            alt="StudySprint Screenshot 1"
+            style="width: 100%; border-radius: 8px"
+          />
+          <p style="font-size: 12px; color: #aaa; margin-top: 8px">
+            Timer Screen
+          </p>
+        </div>
+
       <div
         style="
           margin-top: 30px;
@@ -158,7 +273,7 @@
 
         <a href="https://testflight.apple.com/join/29s1eYqr" target="_blank">
           <img
-            src="testflight.png"
+            src="https://raw.githubusercontent.com/JakubGodar/StudyTImeWeb/refs/heads/main/StudyTime/testflight.png"
             alt="Get the beta on TestFlight"
             style="width: 250px; height: 80px"
           />
@@ -169,7 +284,19 @@
           ⚠️ This link works only on Apple devices (iPhone, iPad, Apple Watch).
         </p>
       </div>
-
+      <div style="padding: 0 10px; margin-top: 20px">
+        <h2 style="color: #e0eafc">🚀 Check on Product Hunt</h2>
+        <a
+          href="https://www.producthunt.com/posts/studysprint?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-studysprint"
+          target="_blank"
+          ><img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=952300&theme=dark&t=1744384302291"
+            alt="StudySprint - Stay&#0032;on&#0032;track&#0044;&#0032;one&#0032;sprint&#0032;at&#0032;a&#0032;time&#0046; | Product Hunt"
+            style="width: 250px; height: 54px"
+            width="250"
+            height="54"
+        /></a>
+      </div>
       <div class="links-contact-wrapper">
         <div class="contact">
           <p><strong>Links</strong></p>
@@ -215,8 +342,8 @@
         </div>
 
         <div class="contact">
-          <p><strong>Kontakt</strong></p>
-          <p>Meno: Jakub Godár</p>
+          <p><strong>Contact</strong></p>
+          <p>Name: Jakub Godár</p>
           <p>
             Email:
             <a href="mailto:2820974@ucm.sk">2820974@ucm.sk</a>
